@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--? bootstrap css -->
+  <link rel="stylesheet" href="../Style/bootstrap.css">
+  <!-- *my css -->
+  <link rel="stylesheet" href="../Style/home.css">
+</head>
+
+<body>
+  <div class="hero-image">
+
+    <!-- * navbar start -->
+
+    <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="../Static/slider_img/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!--& Dizi Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dizi
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <!--& Dizi Dropdown -->
+
+            <!--^ Film Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Film
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <!--^ Film Dropdown -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Canlı TV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Spor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Belgesel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img src="../Static/home/tvplus-cocuk.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Paketler</a>
+            </li>
+
+          </ul>
+
+          <div class="d-flex align-items-center">
+
+            <button class="loginBtn"><a href="./login.html">Üye Girişi</a></button>
+            <button class="signinBtn"><a href="./profile.html">Hesap Oluştur</a></button>
+
+            <!--* account icon -->
+            <div class="account-icon">
+
+
+            </div>
+            <!--* account icon -->
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- * navbar finish -->
+
+    <div class="hero-text">
+      <h1>TV+ İlk 7 Gün Ücretsiz!</h1>
+      <p>İzlenecek ne varsa hep bir fazlası. TV+ dünyasını şimdi keşfet!</p>
+
+      <div class="email-container">
+        <form action="" class="d-flex">
+          <input class="email-input form-control w-50" type="email" placeholder="e-mail adresinizi giriniz">
+          <button class="button">Oturum Aç</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="tv_sticky">
+
+      <div class="tv_ol">
+        <p>Tv+'lı ol</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container">
+    <p class="tv-content">TV+ İçerikleri</p>
+    <div class="tabs">
+        <button class="tablink active">Dizi</button>
+        <button class="tablink">Film</button>
+        <button class="tablink">Çocuk</button>
+        <button class="tablink">Belgesel</button>
+    </div>
+    <div class="slider">
+        <button class="prev" onclick="slideLeft()"><i class="fas fa-chevron-left"></i></button>
+        <div class="slide-container">
+            <div class="slides">
+                <div class="slide">
+                    <img src="../Static/senin_için/chernobyl.jpg" alt="">
+                    <h3>Sanctuary: A Witch's Tale</h3>
+                    <p>Gerilim<br>İngiltere'nin Sanctuary adlı küçük bir kasabası, bir çocuğun kaza sonucu ölü bulunmasının...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/jw3.jpg" alt="">
+                    <h3>Parish</h3>
+                    <p>Dram<br>Çoğunlukla ABD'nin güney limanlarında belgesiz göçmenleri sömürdüğü bilinen Zimbabveli bir...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/chernobyl.jpg" alt="">
+                    <h3>Sanctuary: A Witch's Tale</h3>
+                    <p>Gerilim<br>İngiltere'nin Sanctuary adlı küçük bir kasabası, bir çocuğun kaza sonucu ölü bulunmasının...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/jw3.jpg" alt="">
+                    <h3>Parish</h3>
+                    <p>Dram<br>Çoğunlukla ABD'nin güney limanlarında belgesiz göçmenleri sömürdüğü bilinen Zimbabveli bir...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/chernobyl.jpg" alt="">
+                    <h3>Sanctuary: A Witch's Tale</h3>
+                    <p>Gerilim<br>İngiltere'nin Sanctuary adlı küçük bir kasabası, bir çocuğun kaza sonucu ölü bulunmasının...</p>
+                </div>
+                <div class="slide" id="film">
+                    <img src="../Static/senin_için/jw3.jpg" alt="">
+                    <h3>Parish</h3>
+                    <p>Dram<br>Çoğunlukla ABD'nin güney limanlarında belgesiz göçmenleri sömürdüğü bilinen Zimbabveli bir...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/chernobyl.jpg" alt="">
+                    <h3>Sanctuary: A Witch's Tale</h3>
+                    <p>Gerilim<br>İngiltere'nin Sanctuary adlı küçük bir kasabası, bir çocuğun kaza sonucu ölü bulunmasının...</p>
+                </div>
+                <div class="slide">
+                    <img src="../Static/senin_için/jw3.jpg" alt="">
+                    <h3>Parish</h3>
+                    <p>Dram<br>Çoğunlukla ABD'nin güney limanlarında belgesiz göçmenleri sömürdüğü bilinen Zimbabveli bir...</p>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        </div>
+        <button class="next" onclick="slideRight()"><i class="fas fa-chevron-right"></i></button>
+    </div>
+ 
+    <div class="more">
+        <a href="#">Daha Fazla <i class="fas fa-arrow-right"></i></a>
+    </div>
+</div>
+
+
+
+<div class="container2">
+  <h2 class="text-white text-start mt-5 mb-5">BluTv İçerikleri</h2>
+  <div class="tabs2">
+      <button class="tablink2 active" onclick="showCategory('dizi')">Dizi</button>
+      <button class="tablink2" onclick="showCategory('film')">Film</button>
+      <button class="tablink2" onclick="showCategory('cocuk')">Çocuk</button>
+      <button class="tablink2" onclick="showCategory('belgesel')">Belgesel</button>
+  </div>
+  
+  <div class="slider2">
+      <button class="prev2" onclick="slideLeft2()">❮</button>
+      <div class="slide-container2">
+          <div class="slides2">
+              <div class="slide2">
+                  <img src="../Static/home/prens.jpg" alt="">
+                  <h3>Sanctuary: A Witch's Tale</h3>
+                  <p>Gerilim</p>
+              </div>
+              <div class="slide2">
+                  <img src="../Static/home/sokak.jpg" alt="">
+                  <h3>Parish</h3>
+                  <p>Dram</p>
+              </div>
+              <div class="slide2">
+                  <img src="../Static/home/prens.jpg" alt="">
+                  <h3>Some Other Show</h3>
+                  <p>Komedi</p>
+              </div>
+              <div class="slide2">
+                <img src="../Static/home/sokak.jpg" alt="">
+                  <h3>Another Show</h3>
+                  <p>Aksiyon</p>
+              </div>
+              <div class="slide2">
+                <img src="../Static/home/prens.jpg" alt="">
+                  <h3>Some Other Show</h3>
+                  <p>Komedi</p>
+              </div>
+              <div class="slide2">
+                <img src="../Static/home/sokak.jpg" alt="">
+                  <h3>Another Show</h3>
+                  <p>Aksiyon</p>
+              </div>
+          </div>
+      </div>
+      <button class="next2" onclick="slideRight2()">❯</button>
+  </div>
+  
+
+  <div class="more">
+      <a href="#">Tümü <i class="fa fa-arrow-right"></i></a>
+  </div>
+  
+  <h2 class="text-white text-start mt-5 mb-5">TV+ Spor İçerikleri</h2>
+  <div class="sport-slider">
+      <div class="sport-content">
+        <img src="../Static/home/sampiyonlar-ligi-mobile.webp" alt="Sport 1">
+        <p>sfjkkdsf</p>
+      </div>
+      <div class="sport-content">
+        <img src="../Static/home/sampiyonlar-ligi-mobile.webp" alt="Sport 2">
+        <p>sfjkkdsf</p>
+      </div>
+      <div class="sport-content">
+        <img src="../Static/home/sampiyonlar-ligi-mobile.webp" alt="Sport 3">
+        <p>sfjkkdsf</p>
+      </div>
+      <div class="sport-content">
+        <img src="../Static/home/sampiyonlar-ligi-mobile.webp" alt="Sport 4">
+        <p>sfjkkdsf</p>
+      </div>
+      <div class="sport-content">
+        <img src="../Static/home/sampiyonlar-ligi-mobile.webp" alt="Sport 5">
+        <p>sfjkkdsf</p>
+      </div>
+      
+  </div>
+</div>
+
+
+
+
+
+<div class="container-fluid line">
+
+  <div class="container" id="boxshot">
+
+      <div class="row y-center">
+
+          <div class="col-12 col-md-6">
+
+              <p class="title">Tek paketle 
+                tüm platformlardan izleyin</p>
+              <p>İstediğiniz TV kanallarını, dizi ve filmleri dilediğiniz yerden doyasıya izleyin.</p>
+
+          </div>
+
+          <div class="col-12 col-md-6">
+
+              <div class="tv-container">
+                  <img src="https://tv-static-cdn.tvplus.com.tr/webtv/posters/posterwithprice740X640.webp" alt="">
+              </div>
+
+
+          </div>
+
+
+      </div>
+
+
+  </div>
+
+</div>
+
+
+<div class="container-fluid">
+
+<div class="container3">
+  <div class="faq">
+      <h2>Sıkça Sorulan Sorular</h2>
+      
+  </div>
+
+  <details class="accordion">
+    <summary class="accordion-btn">Acc 1</summary>
+    <div class="accordion-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+      </p>
+    </div>
+  </details>
+  
+  <details class="accordion">
+    <summary class="accordion-btn">Acc 2</summary>
+    <div class="accordion-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+      </p>
+    </div>
+  </details>
+  
+  <details class="accordion">
+    <summary class="accordion-btn">Acc 3</summary>
+    <div class="accordion-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+      </p>
+    </div>
+  </details>
+  
+  <details class="accordion">
+    <summary class="accordion-btn">Acc 4</summary>
+    <div class="accordion-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+      </p>
+    </div>
+  </details>
+
+</div>
+</div>
+
+
+
+
+<!-- footer -->
+
+
+
+
+<footer>
+  <div class="footer-container">
+      <div class="footer-section">
+          <h3>TV+</h3>
+          <ul>
+              <li><a href="#">TV+ PRO</a></li>
+              <li><a href="#">TV+ Smart TV</a></li>
+              <li><a href="#">TV+ Ev (IPTV)</a></li>
+              <li><a href="#">TV+ Ready</a></li>
+              <li><a href="#">TV+ Destek</a></li>
+              <li><a href="#">IPTV Ev Kullanım Kılavuzu</a></li>
+              <li><a href="#">IPTV Ev Kumanda Kurulumu</a></li>
+              <li><a href="#">TV+ Club</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Popüler Türler</h3>
+          <ul>
+              <li><a href="#">Korku</a></li>
+              <li><a href="#">Aksiyon</a></li>
+              <li><a href="#">Animasyon</a></li>
+              <li><a href="#">Komedi</a></li>
+              <li><a href="#">Bilim Kurgu</a></li>
+              <li><a href="#">Gerilim</a></li>
+              <li><a href="#">Aşk</a></li>
+              <li><a href="#">Türk Filmleri</a></li>
+              <li><a href="#">Romantik Komedi</a></li>
+              <li><a href="#">Çocuk Filmleri</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Öne Çıkanlar</h3>
+          <ul>
+              <li><a href="#">Şampiyonlar Ligi</a></li>
+              <li><a href="#">S Sport İzle</a></li>
+              <li><a href="#">Canlı TV</a></li>
+              <li><a href="#">Film İzle</a></li>
+              <li><a href="#">Dizi İzle</a></li>
+              <li><a href="#">TV Yayın Akışı</a></li>
+              <li><a href="#">Bugün Hangi Diziler Var</a></li>
+              <li><a href="#">Game Of Thrones</a></li>
+              <li><a href="#">The Sopranos</a></li>
+              <li><a href="#">The Walking Dead The Ones Who Live</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <div class="footer-links">
+          <a href="#">Promo Kod Aktifle</a>
+          <a href="#">Kullanım Koşulları</a>
+          <a href="#">Aydınlatma Metni</a>
+          <a href="#">Künye</a>
+          <a href="#">Bilgi Toplumu Hizmetleri</a>
+          <a href="#">Çerez Politikası</a>
+      </div>
+      <div class="footer-contact">
+          Bize ulaşın
+          <div class="phone-number">0 850 808 0 808</div>
+      </div>
+      <div class="footer-apps">
+          <a href="#"><img src="../Static/footer_img/app-store.png" alt="App Store"></a>
+          <a href="#"><img src="../Static/footer_img/play-store.png" alt="Google Play"></a>
+          <a href="#"><img src="../Static/footer_img/app-huawei-galery.png" alt="AppGallery"></a>
+      </div>
+      <div class="footer-social">
+          <i class="fab fa-square-facebook fa-2xl"></i>
+          <i class="fab fa-square-youtube fa-2xl"></i>
+          <i class="fab fa-square-instagram fa-2xl"></i>
+          <i class="fab fa-square-twitter fa-2xl"></i>
+      </div>
+      <div class="footer-copyright">
+          Tüm Hakları Saklıdır<br>
+          v5.2.3
+      </div>
+  </div>
+</footer>
+
+<!-- footer -->
+
+
+
+
+
+
+
+
+
+
+<script src="../Script/home.js"></script>
+
+
+  <!--* bootstrap js -->
+  <script src="../Script/bootstrap.bundle.js"></script>
+
+  <!--* fontawesome -->
+  <script src="https://kit.fontawesome.com/68b860877a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
