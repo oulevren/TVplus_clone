@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block site-css %}
+<link rel="stylesheet" href="{% static 'Style/register.css' %}">
+{% endblock site-css %}
+  
+
+
+    
+
+{% block site-content %}
+  
+
+ <!-- * navbar start -->
+
+      {% include './Partials/_defaultnavbar.html' %}
+
+  <!-- * navbar finish -->
+
+ 
+
+    <main>
+        <div class="promo">
+            <h1>TV+ dünyası seni bekliyor!</h1>
+            <ul>
+                <li>Exxen TV ile Şampiyonlar Ligi, BluTV'nin sevilen içerikleri, S Sport ile spor dünyası</li>
+                <li>Smart TV’den, telefondan, bilgisayardan veya tabletten izleme</li>
+                <li>Canlı yayınları Durdur, Geri Al ve Kaydet izle</li>
+                <li>Sadece TV+'a özel içerikler</li>
+            </ul>
+        </div>
+
+        
+        
+        <div class="alert alert-danger alert-dismissible fade show w-25" role="alert">
+          <strong>{{formError}}</strong>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+   
+
+        <div class="signup-form">
+          <h2>Üye Ol</h2>
+          <form action="{% url 'register' %}" method="post">
+            {% csrf_token %}
+              <!-- <input type="text" placeholder="Adınız Soyadınız" name="username">
+              <input type="email" placeholder="E-mail" name="email">
+              <input type="password" placeholder="Şifre" name="password">
+              <input type="password" placeholder="Şifre Tekrar" name="password2"> -->
+
+              {{ registerForm }}
+              <div class="checkboxes">
+                  
+                      <input type="checkbox">
+                      <label> TV+ Kullanıcı Sözleşmesi'ni okudum, onaylıyorum.</label>
+
+                      <input type="checkbox">
+                      <label> Ticari Elektronik İleti ve Veri İznini okudum, onaylıyorum.</label>
+                      
+              </div>
+              <button type="submit">Üye Ol</button>
+          </form>
+          <p>TV+ hesabın varsa <a href="{% url 'login' %}">Giriş Yap</a> ve harika içerikleri hemen izlemeye başla!</p>
+      </div>
+  </main>
+
+
+
+
+  
+<!-- footer -->
+
+
+
+{% include './Partials/_footer.html' %}
+
+<!-- footer -->
+
+      
+          
+
+
+
+
+
+  {% endblock site-content %}
+
+

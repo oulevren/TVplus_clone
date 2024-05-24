@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block site-css %}
+
+<link rel="stylesheet" href="{% static 'Style/login.css' %}">
+
+{% endblock site-css %}
+  
+
+
+
+
+{% block site-content %}
+    
+    <!-- * navbar start -->
+
+    {% include './Partials/_defaultnavbar.html' %}
+
+
+      <!-- * navbar finish -->
+
+
+      <main>
+        <div class="promo">
+            <h1>TV+ dünyası seni bekliyor!</h1>
+            <ul>
+                <li>Exxen TV ile Şampiyonlar Ligi, BluTV'nin sevilen içerikleri, S Sport ile spor dünyası</li>
+                <li>Smart TV’den, telefondan, bilgisayardan veya tabletten izleme</li>
+                <li>Canlı yayınları Durdur, Geri Al ve Kaydet izle</li>
+                <li>Sadece TV+'a özel içerikler</li>
+            </ul>
+        </div>
+        <div class="login-form">
+            <h2>Giriş Yap</h2>
+
+            <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+
+                <input type="text" placeholder="username" name="username">
+                <input type="password" placeholder="Şifre" name="password">
+                <p><a href="#">Şifremi Unuttum</a></p>
+
+                <button type="submit">Giriş Yap</button>
+            </form>
+            <p>TV+ hesabın yoksa <a href="{% url 'register' %}">Kayıt Ol</a> ve harika içerikleri hemen izlemeye başla!</p>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+
+          {% include './Partials/_footer.html' %}
+      
+    <!-- footer -->
+
+{% endblock site-content %}

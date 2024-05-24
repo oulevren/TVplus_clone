@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Static/home/bg.webp"); */
+    height: 50%;
+    background-position: center;
+}
+
+ul li{
+    margin-right: 1rem;
+}
+
+.navbar{
+    position: relative;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+.caption a {
+    color: inherit;
+    text-decoration: none;
+    line-height: 4px;
+}
+
+.nav-link{
+    color: white !important;
+    font-weight: bold;
+}
+
+.banaozel {
+    color: #fad701 !important;
+    font-weight: 600;
+}
+
+.navbar {
+    border-bottom: 1px solid gray;
+    background: #0d1015 !important;
+}
+
+
+
+.loginBtn , .signinBtn{
+    padding: 10px;
+    width: 150px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.loginBtn{
+    background-color: #1b1f28;
+}
+.signinBtn{
+    background-color: #fad701;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../Static/home/register_top_bg_desktop.webp");
+    height: 50%;
+    background-position: center;
+}
+
+.promo {
+    max-width: 50%;
+    display: block;
+    align-self: center;
+    text-align: center;
+    flex: 1;
+}
+
+.promo h1 {
+    font-size: 2.5em;
+}
+
+.promo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.promo ul li {
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    background: rgb(12 16 21 / 70%);
+    padding: 20px;
+    max-width: 450px;
+    display: block;
+    align-self: center;
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+}
+
+.signup-form input {
+    background: #1c2028;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.signup-form .checkboxes {
+    margin-bottom: 20px;
+}
+
+.signup-form .checkboxes label {
+    display: flex;
+    font-size: 14px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fad701;
+    border: none;
+    color: #040404;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-form p {
+    margin-top: 20px;
+}
+
+.signup-form p a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background-color: #0d1015 !important;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #333333;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #ffc107;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.phone-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-apps, .footer-social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-apps a{
+    width: 10%;
+}
+
+.footer-apps a img{
+    width: 100%;
+}
+
+.footer-apps a {
+    margin: 0 10px;
+}
+
+.footer-social{
+    margin-top: 2rem;
+}
+
+.footer-social i {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        margin: 10px 0;
+    }
+
+    .footer-apps, .footer-social {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-apps a, .footer-social a {
+        margin: 10px 0;
+    }
+}
+
+/* footer */
