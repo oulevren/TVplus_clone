@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+        
+
+      <!--? bootstrap css -->
+  <link rel="stylesheet" href="{% static 'Style/bootstrap.css' %}">
+
+  {% block site-css %}
+        
+  {% endblock site-css %}
+  <!--* swiper cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+
+
+
+{% block site-content %}
+    
+{% endblock site-content %}
+    
+
+
+
+
+  
+
+<script src="{% static 'Script/index.js' %}"></script>
+<!--^ swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!--* bootstrap js -->
+<script src="{% static 'Script/bootstrap.bundle.js' %}"></script>
+
+<!--* fontawesome -->
+<script src="https://kit.fontawesome.com/68b860877a.js" crossorigin="anonymous"></script>
+
+{% block site-js %}
+  
+{% endblock site-js %}
+
+
+</body>
+</html>

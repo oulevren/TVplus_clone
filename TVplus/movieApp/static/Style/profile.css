@@ -1,0 +1,150 @@
+/* body{
+    background-color: #0d1015 !important;
+}
+
+nav{
+    border-bottom: 1px solid gray;
+    display: block;
+}
+
+
+
+
+.updateBtn{
+    background-color: #fad701;
+} */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: Arial, sans-serif;
+    background-color: #0d1015;
+    height: 100vh;
+
+}
+
+nav{
+    border-bottom: 1px solid gray;
+    display: block;
+    width: 100%;
+    background-color: #0d1015;
+}
+
+
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.btn:disabled{
+    border-color: none !important;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0d1015;
+    max-height: 90.3vh;
+}
+
+.profiles > div:first-child p {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+
+.profiles:first-child{
+    margin-bottom: 3rem;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+}
+
+.profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.add-profile{
+    background-color: #1c1c1e;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.add-profile i {
+    color: #fefefe;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.update-profile .updateBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #fad701;
+    border: none;
+    color: #1c1c1e;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all;
+}
+
+
+
+.add-profile:hover , .profile-image img:hover{
+    border: 1px solid #fad701;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .add-profile i {
+        font-size: 1.5em;
+    }
+
+    .update-profile .updateBtn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image img {
+        width: 60px;
+        height: 60px;
+        margin-right: 5px;
+    }
+
+    .add-profile i {
+        font-size: 1.2em;
+    }
+
+    .update-profile .updateBtn {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}

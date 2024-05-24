@@ -1,0 +1,85 @@
+{% load static %}
+
+<!-- * navbar start -->
+
+<nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="./home.html">
+        <img src="{% static 'Static/slider_img/logo.svg' %}" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active banaozel" aria-current="page" href="#">Bana Özel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV</a>
+          </li>
+
+          <!--& Dizi Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dizi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!--& Dizi Dropdown -->
+
+          <!--^ Film Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Film
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <!--^ Film Dropdown -->
+
+        </ul>
+
+        <div class="d-flex align-items-center">
+
+          <a href="./search.html"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #FFD43B;"></i></a>
+
+          <!--* account icon -->
+          <div class="account-icon">
+            <img src="{% static 'Static/slider_img/default_avatar.png' %}" alt="avatar">
+            <div class="dropdown-items">
+              <div class="caption">
+                <a href="{% url 'profile' %}">Profilleri Yönet</a>
+                <hr>
+                <a href="#">Profilim</a><br>
+                <a href="#">Hesap Ayarlarim</a>
+                <hr>
+                <a href="{% url 'register' %}">Listelerim</a>
+                <hr>
+                <a href="{% url 'logout' %}">Çikiş</a>
+              </div>
+            </div>
+          </div>
+          <!--* account icon -->
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- * navbar finish -->
